@@ -124,80 +124,18 @@ int main(void)
 	//uzkraunam PID linijos sekimo parametrus
 	eeprom_ext_read_block((char *)&followline_options,MAIN_EE_ADRESS_FOLLOWLINE_OPTIONS,sizeof(followline_options)); 
   
-  
-  //HAL_Delay(10);
-  /* USER CODE BEGIN 2 */
-	//initinam isejimus iejimus
 	
 	
 	motor_perif_init();
   followline_init();
   /*SAUGOMOS STRUKTUROS EEPROM initas*/
   
-
-
-  /* USER CODE END 2 */
-  //rasom i eerpom duomenis testas
-  //eeprom_ext_write_block((char *)write,0,18);
-  //eeprom_ext_read_block((char *)read,0,18);
-	//PRINTF("%s\r\n",write);
-	//PRINTF("%s",read);
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
   /* USER CODE END WHILE */
      adc_calib_sensor_handler();
 		 uart_handler();
-		 uart_cmd_handler();
-		
-  /* USER CODE BEGIN 3 */
-    //PRINTF("%u\r\n",encoder1);
-		//HAL_Delay(100);
-    //print_cnt();	
-    if (ok_sec)
-    {
-		  //PRINTF(".");
-			//PRINTF2("adsdasfsdfdsfgsdgfgds");
-			//PRINTF(".kjkj");
-			//if (nrr>=5)
-			//{
-			//   nrr=0;
-			//}
-		  //PRINTF("\r\n%u\r\n",ADC1ConvertedValues[0]);
-	    //PRINTF("%u\r\n",ADC1ConvertedValues[1]);
-	    //PRINTF("%u\r\n",ADC1ConvertedValues[2]);
-	    //PRINTF("%u\r\n",ADC1ConvertedValues[3]);
-	    //PRINTF("%u\r\n",ADC1ConvertedValues[4]);
-	    //PRINTF("%u\r\n\r\n",ADC1ConvertedValues[5]);
-			//HAL_ADC_Stop_IT(&hadc1); //paleidziam Adc
-			//PRINTF2("%u\r\n %u\r\n %u\r\n %u\r\n %u\r\n %u\r\n",adc_res[0]
-			//,adc_res[1]
-			//,adc_res[2]
-			//,adc_res[3]
-			//,adc_res[4]
-			//,adc_res[5]);
-			
-			//PRINTF2("%u\r\n %u\r\n %u\r\n %u\r\n %u\r\n %u\r\n",10
-			//,10
-			//,10
-			//,10
-			//,10
-			//,10);
-			//HAL_ADC_Start_IT(&hadc1); //paleidziam Adc
-			
-			//PRINTF("\r\n%u\r\n",adc_res[0]);
-			//PRINTF("%u\r\n",adc_res[1]);
-			//PRINTF("%u\r\n",adc_res[2]);
-			//PRINTF("%u\r\n",adc_res[3]);
-			//PRINTF("%u\r\n",adc_res[4]);
-			//PRINTF("%u\r\n",adc_res[5]);
-			//PRINTF("%u\r\n",volt_adc);
-			//PRINTF("Bat volt: %.2fV\r\n",adc_perif.bat_voltage);
-			ok_sec=0;
-			//adc_perif_init();
-			
-		}			
+		 uart_cmd_handler();	
 		
   }
   /* USER CODE END 3 */
@@ -235,12 +173,7 @@ void system_tick_1khz(void)
 	   // print_cnt();
 	}
 	
-	//if (con_ok)
-	//{
-	   //pradedam nauja conversija
-		//HAL_ADC_Start_IT(&hadc1); //paleidziam Adc
-		//con_ok=0;
-	//}
+
 }
 
 /** System Clock Configuration
@@ -279,13 +212,6 @@ void SystemClock_Config(void)
   /* SysTick_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
-
-
-
-
-
-
-
 
 
 

@@ -21,13 +21,156 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
 Dialog DLL:      TCM.DLL V1.14.6.0
  
 <h2>Project:</h2>
-C:\Users\Vycka\Desktop\Linijos_sekimo_zalias2\MDK-ARM\linefollower.uvprojx
+C:\Users\Vycka\Desktop\linefollower_green2\MDK-ARM\linefollower.uvprojx
 Project File Date:  10/23/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'linefollower'
-"linefollower\linefollower.axf" - 0 Error(s), 0 Warning(s).
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_it.c...
+..\MDK-ARM\main.h(12): warning:  #1-D: last line of file ends without a newline
+  void system_tick_1khz(void);
+..\MDK-ARM\uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+../Src/stm32f1xx_it.c: 2 warnings, 0 errors
+compiling main.c...
+..\MDK-ARM\uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+..\MDK-ARM\encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+..\MDK-ARM\gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+..\MDK-ARM\beep.h(23): warning:  #1-D: last line of file ends without a newline
+  bool beep_set_kartai(uint16_t laikas_ms, uint16_t kartai);
+..\MDK-ARM\eeprom_ext.h(22): warning:  #1-D: last line of file ends without a newline
+  void eeprom_ext_read_block(char * dest, uint8_t ee_start_adress, uint8_t dest_size);
+..\MDK-ARM\motor_perif.h(50): warning:  #1-D: last line of file ends without a newline
+  void set_clean_wheels(void);
+..\MDK-ARM\main.h(12): warning:  #1-D: last line of file ends without a newline
+  void system_tick_1khz(void);
+../Src/main.c: 7 warnings, 0 errors
+compiling encoder.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+data_visualizer_print.h(7): warning:  #1-D: last line of file ends without a newline
+  void data_visualizer_print(int16_t D1, int16_t D2, int16_t D3);
+encoder.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+compiling uart1.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+uart1.c: 1 warning, 0 errors
+compiling beep.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+beep.h(23): warning:  #1-D: last line of file ends without a newline
+  bool beep_set_kartai(uint16_t laikas_ms, uint16_t kartai);
+beep.c: 4 warnings, 0 errors
+compiling gpio_perif.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+motor_perif.h(50): warning:  #1-D: last line of file ends without a newline
+  void set_clean_wheels(void);
+gpio_perif.c: 4 warnings, 0 errors
+compiling adc_perif.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+beep.h(23): warning:  #1-D: last line of file ends without a newline
+  bool beep_set_kartai(uint16_t laikas_ms, uint16_t kartai);
+main.h(12): warning:  #1-D: last line of file ends without a newline
+  void system_tick_1khz(void);
+eeprom_ext.h(22): warning:  #1-D: last line of file ends without a newline
+  void eeprom_ext_read_block(char * dest, uint8_t ee_start_adress, uint8_t dest_size);
+adc_perif.c: 6 warnings, 0 errors
+compiling data_visualizer_print.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+data_visualizer_print.h(7): warning:  #1-D: last line of file ends without a newline
+  void data_visualizer_print(int16_t D1, int16_t D2, int16_t D3);
+data_visualizer_print.c(26): warning:  #9-D: nested comment is not allowed
+  	//*/
+data_visualizer_print.c(43): warning:  #1-D: last line of file ends without a newline
+  }
+data_visualizer_print.c: 4 warnings, 0 errors
+compiling pid.c...
+compiling eeprom_ext.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+eeprom_ext.h(22): warning:  #1-D: last line of file ends without a newline
+  void eeprom_ext_read_block(char * dest, uint8_t ee_start_adress, uint8_t dest_size);
+eeprom_ext.c: 4 warnings, 0 errors
+compiling motor_perif.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+motor_perif.h(50): warning:  #1-D: last line of file ends without a newline
+  void set_clean_wheels(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+data_visualizer_print.h(7): warning:  #1-D: last line of file ends without a newline
+  void data_visualizer_print(int16_t D1, int16_t D2, int16_t D3);
+motor_perif.c(132): warning:  #177-D: variable "speedR_rev" was declared but never referenced
+  		   int16_t speedR_rev, speedL_rev;
+motor_perif.c(132): warning:  #177-D: variable "speedL_rev" was declared but never referenced
+  		   int16_t speedR_rev, speedL_rev;
+motor_perif.c: 6 warnings, 0 errors
+compiling followline.c...
+uart1.h(38): warning:  #1-D: last line of file ends without a newline
+  void uart_cmd_handler(void);
+encoder.h(9): warning:  #1-D: last line of file ends without a newline
+  void print_cnt(void);
+gpio_perif.h(85): warning:  #1-D: last line of file ends without a newline
+  void gpio_btn_event_handler(uint8_t btn_event);
+beep.h(23): warning:  #1-D: last line of file ends without a newline
+  bool beep_set_kartai(uint16_t laikas_ms, uint16_t kartai);
+main.h(12): warning:  #1-D: last line of file ends without a newline
+  void system_tick_1khz(void);
+eeprom_ext.h(22): warning:  #1-D: last line of file ends without a newline
+  void eeprom_ext_read_block(char * dest, uint8_t ee_start_adress, uint8_t dest_size);
+data_visualizer_print.h(7): warning:  #1-D: last line of file ends without a newline
+  void data_visualizer_print(int16_t D1, int16_t D2, int16_t D3);
+motor_perif.h(50): warning:  #1-D: last line of file ends without a newline
+  void set_clean_wheels(void);
+followline.c: 8 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_adc.c...
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash_ex.c...
+linking...
+Program Size: Code=23244 RO-data=420 RW-data=116 ZI-data=2004  
+"linefollower\linefollower.axf" - 0 Error(s), 49 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -38,14 +181,14 @@ Package Vendor: ARM
    * Component: CORE Version: 4.3.0
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Vycka\Desktop\Linijos_sekimo_zalias2\MDK-ARM\RTE
+  C:\Users\Vycka\Desktop\linefollower_green2\MDK-ARM\RTE
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:08
 </pre>
 </body>
 </html>
